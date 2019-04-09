@@ -9,9 +9,9 @@ def setup():
 def blink():
   while True:
     GPIO.output(LedPin, GPIO.HIGH)  
-    time.sleep(5)
+    time.sleep(0.1)
     GPIO.output(LedPin, GPIO.LOW) 
-    time.sleep(5)
+    time.sleep(0.1)
 
 def destroy():
   GPIO.output(LedPin, GPIO.LOW)   
